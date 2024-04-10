@@ -18,7 +18,7 @@ const Register = ({onRouteChange, loadUser}) => {
 	}
 
 	const onRegisterSubmit = () => {
-		fetch(`${process.env.BASE_URL}/register`,{
+		fetch(`${process.env.REACT_APP_BASE_URL}/register`,{
 			method : 'post',
 			headers : { 'Content-type': 'application/json'},
 			body : JSON.stringify({
