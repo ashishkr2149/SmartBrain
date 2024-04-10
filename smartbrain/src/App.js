@@ -110,7 +110,7 @@ class App extends Component {
         .then(response => response.json())
         .then(result => {
           if(result){
-            fetch('http://localhost:3000/image',{
+            fetch(`${process.env.BASE_URL}/image`,{
               method : 'put',
               headers : { 'Content-type': 'application/json'},
               body : JSON.stringify({
