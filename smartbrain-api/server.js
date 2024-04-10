@@ -100,6 +100,6 @@ app.use('/', (req, res) => {
 	res.send("Server is running");
 })
 
-app.listen(5000,()=>{
+app.listen(3000,()=>{
 	console.log("App is running on port 3000");
 });
