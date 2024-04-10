@@ -6,6 +6,7 @@ const SignIn = ({onRouteChange, loadUser}) => {
 	const [signInPassword, setSignInPassword] = useState("");
 
 	console.log(signInEmail);
+	console.log(process.env.BASE_URL);
 
 	const onEmailChange = (event) => {
 		setSignInEmail(event.target.value);
